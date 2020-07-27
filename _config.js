@@ -21,21 +21,21 @@ const libs = {
 }
 
 const preload = [
-  { href: 'fonts/Roboto-Regular.woff', as: 'font' },
-  { href: 'fonts/Roboto-Regular.woff2', as: 'font' },
-  { href: 'fonts/Roboto-Bold.woff', as: 'font' },
-  { href: 'fonts/Roboto-Bold.woff2', as: 'font' },
-  { href: 'fonts/Roboto-Italic.woff', as: 'font' },
-  { href: 'fonts/Roboto-Italic.woff2', as: 'font' },
-  { href: 'fonts/Roboto-BoldItalic.woff', as: 'font' },
-  { href: 'fonts/Roboto-BoldItalic.woff2', as: 'font' },
+  { href: 'fonts/gilroyextrabold.woff', as: 'font' },
+  { href: 'fonts/gilroyextrabold.woff2', as: 'font' },
+  { href: 'fonts/gilroylight.woff', as: 'font' },
+  { href: 'fonts/gilroylight.woff2', as: 'font' },
+  { href: 'fonts/OpenSans-Regular.woff', as: 'font' },
+  { href: 'fonts/OpenSans-Regular.woff2', as: 'font' },
+  { href: 'fonts/OpenSans-Light.woff', as: 'font' },
+  { href: 'fonts/OpenSans-Light.woff2', as: 'font' },
 ]
 
 const fonts = [
-  {name: 'Roboto', file: 'Roboto-Regular', style: 'normal', weight: '400'},
-  {name: 'Roboto', file: 'Roboto-Bold', style: 'normal', weight: '700'},
-  {name: 'Roboto', file: 'Roboto-Italic', style: 'italic', weight: '400'},
-  {name: 'Roboto', file: 'Roboto-BoldItalic', style: 'italic', weight: '700'},
+  {name: 'Gilroy', file: 'gilroylight', style: 'normal', weight: '300'},
+  {name: 'Gilroy', file: 'gilroyextrabold', style: 'normal', weight: '400'},
+  {name: 'Open Sans', file: 'OpenSans-Light', style: 'normal', weight: '300'},
+  {name: 'Open Sans', file: 'OpenSans-Regular', style: 'normal', weight: '400'},
 ]
 
 const picture = {
