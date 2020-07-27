@@ -1,0 +1,11 @@
+// Mixins
+
+@mixin font($font_name, $file_name, $root, $fstyle, $fweight) {
+	@font-face {
+		font-family: $font_name;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($font_name), url("#{$root}#{$file_name}.woff") format('woff'), url("#{$root}#{$file_name}.woff2") format('woff2');
+	}
+}
