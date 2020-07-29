@@ -1,1 +1,40 @@
+/* Fonts */
 
+$font-stack:(
+  opensans: "'Open Sans', Arial, Helvetica, sans-serif",
+  gilroy: "Gilroy, Arial, Helvetica, sans-serif",
+);
+
+
+/* Media */
+
+$desktop-width: 1440px;
+
+
+/* Retina */
+
+$resolution-dppx-2x: 1.25dppx;
+$resolution-dppx-3x: 2.25dppx;
+$resolution-dpi-2x: 120dpi;
+$resolution-dpi-3x: 216dpi;
+
+/* Colors */
+
+$colors: (
+  black: #000000, 
+  tundora: #464646,
+  saffron: #f0c52e,
+  supernova: #ffc600,
+  sweetcorn: #f7e184, 
+  marzipan: #f7e296,
+  atlantis: #91c92f,
+  flushmahogany: #cd3944,
+  beautybush: #edb5b5,
+  monza: #db0100, 
+  red: #ff0000,
+  silverchalice: #a6a6a6,
+  alto: #dbdbdb,
+  mercury: #e5e5e5,
+  gallery: #eeeeee,
+  white: #ffffff,
+);
