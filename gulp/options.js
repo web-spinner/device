@@ -38,9 +38,6 @@ const options = {
     inlineSvg: true
   },
   srcset: config.pic,
-  fonter: {
-    formats:['ttf'],
-  },
   favicons: {
     manifestRelativePaths: true,
     path: 'favicons/',
