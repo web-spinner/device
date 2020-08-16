@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164 36"><g><g><g><text dominant-baseline="text-before-edge" style="line-height:26.45954px" font-family="'Gilroy-ExtraBold','Gilroy-ExtraBold'" font-size="26.46" font-style="none" font-weight="400"><tspan style="font-kerning:normal" letter-spacing=".26">D</tspan><tspan style="font-kerning:normal" letter-spacing=".26">EVICE</tspan></text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="36">
+    <text font-family="Gilroy" font-size="26.46" font-weight="bold" transform="matrix(1.8265 0 0 1.8141 10.55 34.314)">
+        DEVICE
+    </text>
+</svg>
