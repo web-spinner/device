@@ -1,8 +1,102 @@
 <!-- @@master layouts/layout.html {"title":"Главная"} -->
 <!-- @@block content -->
-@@include('../blocks/modules/header/header.html', {"class":"header"})
+@@include('../blocks/modules/header/header.html', { "header":{ "class":"page-header page-header--main" }, "logo":{ "href":"href='index.html'" } })
 <main>
-
+    <h1 class="visually-hidden">Главная страница Device</h1>
+    <section class="slider">
+        <h2 class="visually-hidden">Наши лучшие предложения</h2>
+        <div class="slider__wraper">
+          <article class="slider__item">
+            <h3 class="slider__title">Делай селфи, <br> как Бен Стиллер!</h3>
+            <p class="slider__desc">Самая длинная палка для селфи доступна в нашем магазине.
+            <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <picture>
+              <source type="image/webp" srcset="img/slider-1.webp 1x,img/slider-1@2x.webp 2x,img/slider-1@3x.webp 3x">
+              <img class="slider__image" src="img/slider-1.png" srcset="img/slider-1@2x.png 2x,img/slider-1@3x.png 3x" alt="Палка для селфи">
+            </picture>
+            <a class="slider__more button button--more" href="#">Подробнее</a>
+            <table class="slider__feature">
+              <caption class="visually-hidden">Характеристики</caption>
+              <tr>
+                <th>Длина палки</th>
+                <td>8,5 м</td>
+              </tr>
+              <tr>
+                <th>Вес палки</th>
+                <td>5 кг</td>
+              </tr>
+              <tr>
+                <th>Карбон</th>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </article>
+          <article class="slider__item">
+            <h3 class="slider__title">Делай селфи, <br> как Бен Стиллер!</h3>
+            <p class="slider__desc">Самая длинная палка для селфи доступна в нашем магазине.
+            <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <picture>
+              <source type="image/webp" srcset="img/slider-2.webp 1x,img/slider-2@2x.webp 2x,img/slider-2@3x.webp 3x">
+              <img class="slider__image" src="img/slider-2.png" srcset="img/slider-2@2x.png 2x,img/slider-2@3x.png 3x" alt="Палка для селфи">
+            </picture>
+            <a class="slider__more button button--more" href="#">Подробнее</a>
+            <table class="slider__feature">
+              <caption class="visually-hidden">Характеристики</caption>
+              <tr>
+                <th>Длина палки</th>
+                <td>8,5 м</td>
+              </tr>
+              <tr>
+                <th>Вес палки</th>
+                <td>5 кг</td>
+              </tr>
+              <tr>
+                <th>Карбон</th>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </article>
+          <article class="slider__item">
+            <h3 class="slider__title">Делай селфи, <br> как Бен Стиллер!</h3>
+            <p class="slider__desc">Самая длинная палка для селфи доступна в нашем магазине.
+            <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <picture>
+              <source type="image/webp" srcset="img/slider-3.webp 1x,img/slider-3@2x.webp 2x,img/slider-3@3x.webp 3x">
+              <img class="slider__image" src="img/slider-3.png" srcset="img/slider-3@2x.png 2x,img/slider-3@3x.png 3x" alt="Палка для селфи">
+            </picture>
+            <a class="slider__more button button--more" href="#">Подробнее</a>
+            <table class="slider__feature">
+              <caption class="visually-hidden">Характеристики</caption>
+              <tr>
+                <th>Длина палки</th>
+                <td>8,5 м</td>
+              </tr>
+              <tr>
+                <th>Вес палки</th>
+                <td>5 кг</td>
+              </tr>
+              <tr>
+                <th>Карбон</th>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </article>
+        </div>
+        <ul class="slider__dots">
+          <li>
+            <input id="slider-dot-1" class="visually-hidden" type="radio" checked>
+            <label class="slider__dot" for="slider-dot-1"></label>
+          </li>
+          <li>
+            <input id="slider-dot-2" class="visually-hidden" type="radio">
+            <label class="slider__dot"for="slider-dot-2"></label>
+          </li>
+          <li>
+            <input id="slider-dot-3" class="visually-hidden" type="radio">
+            <label class="slider__dot" for="slider-dot-3"></label>
+          </li>
+        </ul>
+    </section>
 </main>
-@@include('../blocks/modules/footer/footer.html', {"class":"footer"})
+@@include('../blocks/modules/footer/footer.html', { "footer":{ "class":"page-footer" }, "logo":{ "href":"href='index.html'" } })
 <!-- @@close -->
