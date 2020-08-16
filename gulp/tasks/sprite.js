@@ -11,7 +11,7 @@ const sprite = () => {
   return src( paths.src.sprite )
     .pipe( plumber( options.plumber))
     .pipe( svgstore( options.svgstore ))
-    .pipe( rename('icons.svg', { dirname:'' }))
+    .pipe( rename('sprite.svg', { dirname:'' }))
     .pipe( dest( paths.build.sprite ))
     .pipe( plumber.stop());
 }
