@@ -21,8 +21,8 @@ const libs = {
 }
 
 const preload = [
-  { href: 'fonts/gilroyextrabold.woff', as: 'font' },
-  { href: 'fonts/gilroyextrabold.woff2', as: 'font' },
+  { href: 'fonts/GilroyExtraBold.woff', as: 'font' },
+  { href: 'fonts/GilroyExtraBold.woff2', as: 'font' },
   { href: 'fonts/gilroylight.woff', as: 'font' },
   { href: 'fonts/gilroylight.woff2', as: 'font' },
   { href: 'fonts/OpenSans-Regular.woff', as: 'font' },
@@ -33,7 +33,7 @@ const preload = [
 
 const fonts = [
   {name: 'Gilroy', file: 'gilroylight', style: 'normal', weight: '300'},
-  {name: 'Gilroy', file: 'gilroyextrabold', style: 'normal', weight: '800'},
+  {name: 'Gilroy', file: 'GilroyExtraBold', style: 'normal', weight: '800'},
   {name: 'Open Sans', file: 'OpenSans-Light', style: 'normal', weight: '300'},
   {name: 'Open Sans', file: 'OpenSans-Regular', style: 'normal', weight: '400'},
 ]
