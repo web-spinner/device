@@ -1,24 +1,9 @@
-/* Fonts */
-
-$font-stack:(
-  opensans: "'Open Sans",
-  gilroy: "Gilroy",
-);
-
-
-/* Media */
-
 $desktop-width: 1440px;
-
-
-/* Retina */
 
 $resolution-dppx-2x: 1.25dppx;
 $resolution-dppx-3x: 2.25dppx;
 $resolution-dpi-2x: 120dpi;
 $resolution-dpi-3x: 216dpi;
-
-/* Colors */
 
 $colors: (
   black: #000000, 

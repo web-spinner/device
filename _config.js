@@ -32,10 +32,10 @@ const preload = [
 ]
 
 const fonts = [
-  {name: 'Gilroy', file: 'gilroylight', style: 'normal', weight: '300'},
-  {name: 'Gilroy', file: 'GilroyExtraBold', style: 'normal', weight: '800'},
-  {name: 'Open Sans', file: 'OpenSans-Light', style: 'normal', weight: '300'},
-  {name: 'Open Sans', file: 'OpenSans-Regular', style: 'normal', weight: '400'},
+  {name: 'Gilroy', file: 'gilroylight', style: 'normal', weight: 300},
+  {name: 'Gilroy', file: 'GilroyExtraBold', style: 'normal', weight: 800},
+  {name: 'Open Sans', file: 'OpenSans-Light', style: 'normal', weight: 300},
+  {name: 'Open Sans', file: 'OpenSans-Regular', style: 'normal', weight: 400},
 ]
 
 const picture = {
