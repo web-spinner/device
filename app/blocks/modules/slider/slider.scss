@@ -1,8 +1,10 @@
-.slider__title {
+.slider .slider__title {
+  font-size: 47px;
+  line-height: 56px;
   letter-spacing: 0.17px;
 }
 
-.slider__count {
+.slider .slider__count {
   display: inline-block;
 
   font-size: 179px;
@@ -11,6 +13,32 @@
   color: $white;
 }
 
-.slider__desc {
+.slider .slider__desc {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
   letter-spacing: 0.15px;
+  color: $dark;
+}
+
+.slider th {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.13px;
+  color: $dark;
+}
+
+.slider td {
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;  
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.slider__dots {
+  list-style: none;
 }

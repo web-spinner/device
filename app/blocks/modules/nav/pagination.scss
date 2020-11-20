@@ -1,0 +1,32 @@
+.pagination {
+  list-style: none;
+}
+
+.pagination__item .pagination__link {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  color: rgba($black, 0.3);
+
+  &:hover, &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &--active, &--active:hover, &--active:focus, &:active {
+    color: rgba($black, 1);
+  }
+}
+
+.pagination__item--back .pagination__link,
+.pagination__item--forward .pagination__link {
+  color: rgba($black, 1);
+
+  &:hover, &:focus, &:active {
+    background-color: $silver;
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}

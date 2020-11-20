@@ -1,0 +1,38 @@
+.checkbox {
+  & + label {
+    position: relative;
+
+    display: block;
+    padding-left: 40px;
+  }
+
+  & + label::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-top: -12px;
+    background-image: url('/img/checkbox-off.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:checked + label::before, &:active:not(:disabled) + label::before {
+      width: 27px;
+      background-image: url('/img/checkbox-on.svg');
+      opacity: 1;
+  }
+
+  &:not(:disabled) + label:hover::before, &:focus:not(:disabled) + label::before {
+    opacity: 0.6;
+  }
+
+  &:disabled + label {
+    opacity: 0.25;
+  }
+}

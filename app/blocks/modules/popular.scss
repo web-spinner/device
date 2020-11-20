@@ -1,0 +1,16 @@
+.popular__list {
+  list-style: none; 
+}
+
+.popular__link {
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: $black;
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}

@@ -1,0 +1,17 @@
+.textarea {
+  &, &::placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba($dark, 0.4);
+  }
+
+  &, &:focus::placeholder {
+    color: rgba($dark, 1);
+  }
+
+  &:invalid {
+    color: rgba($dark, 0.4);
+  }
+}

@@ -4,10 +4,13 @@
 }
 
 .logo[href]:hover, .logo[href]:focus {
-  outline: none;
   opacity: 0.6;
 }
 
 .logo[href]:active {
   opacity: 0.3;
+}
+
+.logo--bottom svg {
+  fill: $light-yellow;
 }

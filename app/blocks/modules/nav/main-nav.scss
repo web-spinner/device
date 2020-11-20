@@ -5,21 +5,22 @@
 .main-nav__list .main-nav__link {
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: normal;
-  text-transform: uppercase;
+  letter-spacing: 3.6px;
   color: $black;
 
   cursor: pointer;
 
   &:hover, &:focus {
-    outline: none;
     opacity: 0.6;
   }
 
   &:active {
-    outline: none;
     opacity: 0.3;
   }
+}
+
+.main-nav__list:not(.main-nav__list--catalog) .main-nav__link {
+  text-transform: uppercase;
 }
 
 .main-nav__list--catalog .main-nav__link {
@@ -28,5 +29,8 @@
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
-  text-transform: capitalize;
+}
+
+.main-nav--bottom .main-nav__link {
+  color: $white;
 }

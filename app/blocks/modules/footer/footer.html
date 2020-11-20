@@ -1,104 +1,87 @@
 <footer class="@@footer.class">
-    <a class="page-footer__logo logo logo--bottom" @@logo.href>
-        <svg width="180px" height="36px" role="img">
-            <use xlink:href="img/sprite.svg#logo"></use>
+  <a class="page-footer__logo logo logo--bottom" @@logo.href>
+    <svg width="180px" height="36px" role="img">
+      <use xlink:href="img/sprite.svg#logo"></use>
+    </svg>
+  </a>
+  <ul class="page-footer__user-list user-list user-list--bottom">
+    <li class="user-list__item user-list__item--auth">
+      <a class="user-list__link" href="#">
+        <svg width="13px" height="12px">
+          <use xlink:href="img/sprite.svg#user"></use>
         </svg>
-    </a>
-    <ul class="page-footer__user-list user-list user-list--bottom">
-        <li class="user-list__item user-list__item--auth">
-            <a href="#">
-                <svg width="13px" height="12px">
-                    <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-            </a>
-            <span>Войти</span>
-        </li>
-        <li class="user-list__item user-list__item--account">
-            <a href="#">
-                <svg width="13px" height="12px">
-                    <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-                <span>Валентин Петухов</span>
-            </a>
-        </li>
-        <li class="user-list__item user-list__item--logout">
-            <a href="#">Выйти</a>
-        </li>
-        <li class="user-list__item user-list__item--compare">
-            <a href="#">
-                <svg width="10px" height="10px">
-                    <use xlink:href="img/sprite.svg#compare"></use>
-                </svg>
-                <span>Сравнить</span>
-            </a>
-        </li>
-        <li class="user-list__item user-list__item--cart">
-            <a href="#">
-                <svg width="12px" height="12px">
-                    <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-                <span>Корзина</span>
-            </a>
-        </li>
-    </ul>
-    <nav class="page-footer__main-nav main-nav main-nav--bottom">
-        <ul class="main-nav__list">
-            <li class="main-nav__item">
-                <a class="main-nav__catalog-btn" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">Гарантия</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">Контакты</a>
-            </li>
-        </ul>
-        <ul class="main-nav__list main-nav__list--catalog main-nav__list--hidden">
-            <li class="main-nav__item"><a href="#">Виртуальная реальность</a>
-            </li>
-            <li class="main-nav__item"><a href="#">Моноподы для селфи</a>
-            </li>
-            <li class="main-nav__item"><a href="#">Экшн-камеры</a>
-            </li>
-            <li class="main-nav__item"><a href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="main-nav__item"><a href="#">Умные часы</a>
-            </li>
-            <li class="main-nav__item"><a href="#">Квадрокоптеры</a>
-            </li>
-        </ul>
-    </nav>
-    <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
-    <p class="page-footer__phone">Тел.: +7 (495) 495-95-95</p>
-    <ul class="page-footer__social social-list">
-        <li class="social__item social__item--fb">
-            <a href="#">
-                <svg width="32px" height="32px">
-                    <use xlink:href="img/sprite.svg#fb"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="social__item social__item--insta">
-            <a href="#">
-                <svg width="32px" height="32px">
-                    <use xlink:href="img/sprite.svg#insta"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="social__item social__item--twitter">
-            <a href="#">
-                <svg width="32px" height="32px">
-                    <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-    <a class="page-footer__copyright logo-copyright" href="#">
-        <svg width="27px" height="35px">
-            <use xlink:href="img/sprite.svg#logo-html"></use>
+        <span>Войти</span>
+      </a>
+    </li>
+    <li class="user-list__item user-list__item--account">
+      <a class="user-list__link" href="#">
+        <svg width="13px" height="12px">
+          <use xlink:href="img/sprite.svg#user"></use>
         </svg>
-    </a>
+        <span>Валентин Петухов</span>
+      </a>
+    </li>
+    <li class="user-list__item user-list__item--logout">
+      <a class="user-list__link" href="#">Выйти</a>
+    </li>
+    <li class="user-list__item user-list__item--compare">
+      <a class="user-list__link" href="#">
+        <svg width="10px" height="10px">
+          <use xlink:href="img/sprite.svg#compare"></use>
+        </svg>
+        <span>Сравнить</span>
+      </a>
+    </li>
+    <li class="user-list__item user-list__item--cart">
+      <a class="user-list__link" href="#">
+        <svg width="12px" height="12px">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+        <span>Корзина</span>
+      </a>
+    </li>
+  </ul>
+  <nav class="page-footer__main-nav main-nav main-nav--bottom">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Доставка</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Гарантия</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
+  <p class="page-footer__phone">Тел.: +7 (495) 495-95-95</p>
+  <ul class="page-footer__social social-list">
+    <li class="social__item social__item--fb">
+      <a class="social__link" href="#">
+        <svg width="32px" height="32px">
+          <use xlink:href="img/sprite.svg#fb"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item social__item--insta">
+      <a class="social__link" href="#">
+        <svg width="32px" height="32px">
+          <use xlink:href="img/sprite.svg#insta"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item social__item--twitter">
+      <a class="social__link" href="#">
+        <svg width="32px" height="32px">
+          <use xlink:href="img/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <a class="page-footer__copyright logo-copyright" href="#">
+    <svg width="27px" height="35px">
+      <use xlink:href="img/sprite.svg#copyright"></use>
+    </svg>
+  </a>
 </footer>

@@ -11,7 +11,6 @@
   color: $black;
 
   &:hover, &:focus {
-    outline: none;
     opacity: 0.6;
   }
 
@@ -24,11 +23,40 @@
   opacity: 0.3;
 
   &:hover, &:focus {
-    outline: none;
     opacity: 1;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.user-list--bottom .user-list__link {
+  color: rgba($white, 0.7);
+
+  & svg {
+    fill: rgba($light-yellow, 1);
+  }
+
+  &:hover, &:focus {
+    & span {
+      opacity: 1;
+      color: rgba($white, 1);
+    }
+
+    & svg {
+      fill: rgba($light-yellow, 0.6);
+    }
+  }
+
+  &:active {
+    & span {
+      opacity: 1;
+      color: rgba($white, 0.3);
+    }
+
+    & svg {
+      fill: rgba($light-yellow, 0.3);
+    }
   }
 }

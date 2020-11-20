@@ -1,0 +1,27 @@
+.filter .filter__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.filter__box {
+  border: none;
+}
+
+.filter .filter__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter__list {
+  list-style: none;
+}
+
+.filter__range {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.2;
+}

@@ -1,0 +1,21 @@
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list__link {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  opacity: 0.3;
+  color: $black;
+
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

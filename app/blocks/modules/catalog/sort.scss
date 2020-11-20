@@ -1,0 +1,44 @@
+.sort__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+}
+
+.sort__list {
+  list-style: none;
+}
+
+.sort__link {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  opacity: 0.3;
+
+  &:focus, &:hover {
+    opacity: 0.6;
+  }
+
+  &:active, &--active, &--active:hover, &--active:focus, &--active:active {
+    opacity: 1;
+  }
+
+  &--up, &--down {
+    display: block;
+    width: 11px;
+    height: 10px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--up {
+    background-image: url('/img/icon-up-dir.svg');
+  }
+
+  &--down {
+    background-image: url('/img/icon-down-dir.svg');
+  }
+}

@@ -1,0 +1,57 @@
+.cart {
+  width: 360px;
+
+  cursor: pointer;
+
+  &:hover .cart__buttons {
+    display: block;
+  }
+}
+.cart .cart__link {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: $black;
+  outline: 1;
+
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.cart .cart__price {
+  letter-spacing: 1px;
+}
+
+.cart--new {
+  position: relative;
+
+  &::before {
+    content: 'New';
+
+    position: absolute;
+    top: 28px;
+    right: 27px;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid $black;
+    border-radius: 50%;
+
+    color: $black;
+    text-transform: uppercase;
+    opacity: 0.1;
+  }
+}
+
+.cart__buttons {
+  display: none;
+}
