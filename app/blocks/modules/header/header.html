@@ -1,93 +1,103 @@
 <header class="@@header.class">
-    <a class="page-header__logo logo logo--top" @@logo.href>
+  <div class="page-header__wrap">
+    <div class="page-header__logo-wrap">
+      <a class="page-header__logo logo logo--top" @@logo.href>
         <svg width="180px" height="36px" role="img">
-            <use xlink:href="img/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
-    </a>
+      </a>
+    </div>
 
-    <form class="page-header__search search" action="#" method="GET">
+    <div class="page-headeer__search-wrap">
+      <form class="page-headeer__search search" action="#" method="GET">
         <label class="search__label label label--search" for="search">
-            <svg width="16px" height="16px">
-                <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
+          <svg width="16px" height="16px">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
         </label>
         <input class="search__input input input--search" id="search" type="search" placeholder="Поиск по сайту" name="search">
         <button class="search__button button-search" type="submit">Найти</button>
-    </form>
+      </form>
+    </div>
 
-    <ul class="page-header__user-list user-list">
+    <div class="page-header__user-wrap">
+      <ul class="page-header__user-list user-list">
         <li class="user-list__item user-list__item--auth">
-            <a class="user-list__link" href="#">
-                <svg width="13px" height="12px">
-                    <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-                <span>Войти</span>
-            </a>
+          <a class="user-list__link" href="#">
+            <svg width="13px" height="12px">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
         </li>
         <li class="user-list__item user-list__item--account">
-            <a class="user-list__link" href="#">
-                <svg width="13px" height="12px">
-                    <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-                <span>Валентин Петухов</span>
-            </a>
+          <a class="user-list__link" href="#">
+            <svg width="13px" height="12px">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            <span>Валентин Петухов</span>
+          </a>
         </li>
         <li class="user-list__item user-list__item--logout">
-            <a class="user-list__link" href="#">
-              <span>Выйти</span>
-            </a>
+          <a class="user-list__link" href="#">
+            <span>Выйти</span>
+          </a>
         </li>
         <li class="user-list__item user-list__item--compare">
-            <a class="user-list__link" href="#">
-                <svg width="10px" height="10px">
-                    <use xlink:href="img/sprite.svg#compare"></use>
-                </svg>
-                <span>Сравнить</span>
-            </a>
+          <a class="user-list__link" href="#">
+            <svg width="10px" height="10px">
+              <use xlink:href="img/sprite.svg#compare"></use>
+            </svg>
+            <span>Сравнить</span>
+          </a>
         </li>
         <li class="user-list__item user-list__item--cart">
-            <a class="user-list__link" href="#">
-                <svg width="12px" height="12px">
-                    <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-                <span>Корзина</span>
-            </a>
+          <a class="user-list__link" href="#">
+            <svg width="12px" height="12px">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            <span>Корзина</span>
+          </a>
         </li>
-    </ul>
-    <nav class="page-header__main-nav main-nav">
+      </ul>
+    </div>
+    <div class="page-header__nav-wrap">
+      <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
-            <li class="main-nav__item">
-                <a class="main-nav__link main-nav__catalog-btn" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Гарантия</a>
-            </li>
-            <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Контакты</a>
-            </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__catalog-btn" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Гарантия</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
         </ul>
         <ul class="main-nav__list main-nav__list--catalog main-nav__list--hidden">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Умные часы</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Квадрокоптеры</a>
-            </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Умные часы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Квадрокоптеры</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </div>
 </header>

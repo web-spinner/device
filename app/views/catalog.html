@@ -1,23 +1,25 @@
 <!-- @@master layouts/layout.html {"title":"Главная"} -->
 <!-- @@block content -->
 @@include('../blocks/modules/header/header.html', { "header":{ "class":"page-header page-header--catalog" }, "logo":{ "href":"href='index.html'" } })
-<main class="page-main catalog">
-  <header class="catalog__header">
-    <h1 class="visually-hidden">Страница каталога</h1>
-    <h2 class="catalog__subtitle">Моноподы для селфи</h1>
-    <ul class="catalog__breadcrumbs breadcrumbs-list">
-      <li class="breadcrumbs-list__item">
-        <a class="breadcrumbs-list__link" href="index.html">Главная</a>
-      </li>
-      <li class="breadcrumbs-list__item">
-        <a class="breadcrumbs-list__link" href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="breadcrumbs-list__item">
-        <a class="breadcrumbs-list__link" href="catalog.html?product=monopods">Моноподы для селфи</a>
-      </li>
-    </ul>
+<main class="page-catalog">
+  <header class="page-catalog__header">
+    <div class="header__wrap">
+      <h1 class="visually-hidden">Страница каталога</h1>
+      <h2 class="page-catalog__subtitle">Моноподы для селфи</h1>
+      <ul class="page-catalog__breadcrumbs breadcrumbs-list">
+        <li class="breadcrumbs-list__item">
+          <a class="breadcrumbs-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-list__item">
+          <a class="breadcrumbs-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-list__item">
+          <a class="breadcrumbs-list__link" href="catalog.html?product=monopods">Моноподы для селфи</a>
+        </li>
+      </ul>
+    </div>
   </header>
-  <div class="filter">
+  <div class="page-catalog__filter filter">
     <header class="filter__header">
       <h3 class="filter__title">Фильтр:</h3>
     </header>
@@ -77,7 +79,7 @@
     </form>
   </div>
   
-  <section class="catalog__products products">
+  <section class="page-catalog__products products">
     <header class="products__header">
       <h3 class="visually-hidden">Каталог товаров</h3>
       <div class="products__sort sort">
