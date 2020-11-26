@@ -13,4 +13,10 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  display: none;
+}
+
+.search__input:focus + .search__button {
+  display: block;
 }
