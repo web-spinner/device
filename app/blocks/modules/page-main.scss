@@ -1,7 +1,7 @@
 .page-main {
   display: grid;
-  grid-template-columns: auto 580px 580px auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto repeat(2, 580px) auto;
+  grid-template-rows: repeat(5, auto);
   width: 1445px;
   margin: 0 auto;
 }
@@ -27,7 +27,6 @@
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  justify-self: center;
 }
 
 .page-main__logotypes {

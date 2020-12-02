@@ -53,20 +53,17 @@
   width: 220px;
 }
 
-.button--services {
-  width: 160px;
-
-  &:active {
-    width: 278px;
-    background-color: $black;
-
-    color: $super-light-orange;
+.button {
+  &--services {
+    width: 160px;
   }
-}
 
-.button--services-active {
-  &, &:hover, &:focus, &:active {
-    width: 278px;
+  &--services:active, 
+  &--services-active, 
+  &--services-active:hover,
+  &--services-active:focus,
+  &--services-active:active {
+    width: 100%;
     padding-left: 19px;
     background-color: $black;
 
