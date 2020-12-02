@@ -1,8 +1,16 @@
 .popular__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none; 
 }
 
 .popular__link {
+  display: flex;
+  flex-direction: column;
+
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -10,7 +18,37 @@
   letter-spacing: 0.18px;
   color: $black;
 
+  &:hover, &:focus {
+    & .popular__icon {
+      background-color: rgba($yellow, 1);
+    }
+  }
+
   &:active {
     color: rgba($black, 0.3);
+
+    & .popular__icon {
+      background-color: rgba($yellow, 1);
+    }
+
+    & svg {
+      opacity: 0.3;
+    }
+  }
+
+  & .popular__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 30px;
+    background-color: rgba($yellow, 0.5);
+  }
+}
+
+.popular__item {
+  &:nth-child(2) svg {
+    align-self: flex-end;
   }
 }
