@@ -14,6 +14,7 @@
 .page-main__slider {
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-top: -110px;
 }
 
 .page-main__popular {
@@ -27,11 +28,13 @@
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
+  margin-top: 80px;
 }
 
 .page-main__logotypes {
   grid-row-start: 4;
   grid-row-end: 5;
+  margin-top: 90px;
 }
 
 .page-main__about-us {
@@ -39,6 +42,7 @@
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
+  margin-top: 95px;
 }
 
 .page-main__contacts {
@@ -46,4 +50,5 @@
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 6;
+  margin-top: 95px;
 }

@@ -1,11 +1,58 @@
+.about-us__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  &:before {
+    content: '';
+
+    display: block;
+    width: 80px;
+    height: 7px;
+    margin-bottom: 45px;
+
+    background-color: $black;
+  }
+}
+
+.about-us__text-wrap {
+  margin-top: 45px;
+}
+
 .about-us__text {
+  margin: 0;
+  padding: 0;
+
   letter-spacing: 0.15px;
+
+  &:last-child {
+    margin-top: 30px;
+
+    letter-spacing: -0.15px;
+  }
 }
 
 .about-us__list {
+  margin: 0;
+  margin-top: 75px;
+  padding: 0;
+  padding-left: 35px;
+
   list-style: none;
 }
 
 .about-us__item {
+  margin-top: 18px;
+
   letter-spacing: 0.5px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.about-us__button {
+  margin-top: 60px;
+  margin-left: 5px;
 }

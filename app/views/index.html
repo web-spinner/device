@@ -264,8 +264,10 @@
   </section>
   <section class="page-main__about-us about-us">
     <h2 class="about-us__title">О нас</h2>
-    <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
-    <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями:</p>
+    <div class="about-us__text-wrap">
+      <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
+      <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями:</p>
+    </div>
     <ul class="about-us__list">
       <li class="about-us__item">Деловые Линии</li>
       <li class="about-us__item">Автотрейдинг</li>
@@ -278,10 +280,12 @@
     <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
     <br>проверить работоспособность покупки. Всякое бывает.</p>
     <div class="contacts__map map">
-      <picture>
-        <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x,img/map@3x.webp 3x">
-        <img class="contacts__image" src="img/map.jpg" srcset="img/map@2x.jpg 2x,img/map@3x.jpg 3x" width="560" height="222" alt="улица Строителей, 15">
-      </picture>
+      <button class="map__button">
+        <picture>
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x,img/map@3x.webp 3x">
+          <img class="contacts__image" src="img/map.jpg" srcset="img/map@2x.jpg 2x,img/map@3x.jpg 3x" width="560" height="222" alt="улица Строителей, 15">
+        </picture>
+      </button>
     </div>
     <button class="contacts__button button button--contacts">Напишите нам</button>
   </section>
