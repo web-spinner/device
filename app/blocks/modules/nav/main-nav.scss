@@ -141,6 +141,15 @@
   letter-spacing: 0.15px;
 }
 
+.main-nav--bottom .main-nav__list {
+  display: flex;
+}
+
+.main-nav--bottom .main-nav__item {
+  margin-right: 35px;
+}
+
 .main-nav--bottom .main-nav__link {
   color: $white;
+  text-transform: uppercase;
 }

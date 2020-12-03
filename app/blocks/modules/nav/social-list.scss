@@ -1,8 +1,16 @@
 .social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.social__link {
+.social-list__item {
+  margin-right: 23px;
+}
+
+.social-list__link {
   opacity: 0.3;
 
   &:hover, &:focus {

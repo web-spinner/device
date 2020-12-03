@@ -89,6 +89,16 @@
   }
 }
 
+.user-list--bottom .user-list__item {
+  &--auth {
+    margin-right: 40px;
+  }
+  
+  &--logout {
+    margin-right: 40px;
+  }
+}
+
 .user-list__item--hidden {
   display: none;
 }
