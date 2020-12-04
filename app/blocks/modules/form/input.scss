@@ -1,4 +1,10 @@
 .input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  background-color: rgba(#e5e5e5, 0.5);
 
   &, &::placeholder {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
@@ -8,14 +14,32 @@
     color: rgba($dark, 0.4);
   }
 
-  &:focus, &:focus::placeholder {
+  &:hover, &:focus, &:hover::placeholder, &:focus::placeholder {
     color: rgba($dark, 1);
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+
+    background-color: rgba($light-silver, 0.8);
+  }
+
+  &:focus {
+    padding: 12px;
+
+    background-color: rgba($white, 0.5);
+    outline: none;
+    border: 3px solid $yellow;
   }
 
   &:invalid {
     color: rgba($dark, 0.4);
-  }
 
+    border: none;
+    outline: none;
+    background-color: rgba($light-pink, 0.5);
+  }
 
   &--search {
     width: 357px;
