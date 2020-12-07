@@ -1,5 +1,33 @@
 .breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.breadcrumbs-list__item {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+
+  &::after {
+    content: '';
+
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin-left: 13px;
+
+    border-top: 2px solid $black;
+    border-right: 2px solid $black;
+
+    transform: rotate(45deg);
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 }
 
 .breadcrumbs-list__link {
