@@ -44,7 +44,7 @@
   &--search {
     width: 357px;
     padding-top: 10px;
-    padding-bottom: 9px;
+    padding-bottom: 11px;
     padding-left: 40px;
     padding-right: 95px;
     border: none;
@@ -67,7 +67,16 @@
       opacity: 1;
     }
 
+    &:focus, &:hover, &:active {
+      background-color: transparent;
+    }
+
     &:focus, &:active {
+      padding-top: 10px;
+      padding-bottom: 9px;
+      padding-left: 40px;
+      padding-right: 95px;
+
       border: none;
       border-bottom: 2px solid $black;
       outline: none;

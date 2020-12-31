@@ -2,7 +2,7 @@
   width: 1445px;
   margin: 0 auto;
   margin-top: 85px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   background-color: $dark;
 }
 
@@ -24,7 +24,7 @@
     grid-column-end: 2;
     align-self: center;
     justify-self: left;
-    margin-top: 35px;
+    margin-top: 55px;
 
     background-color: $yellow;
   }
@@ -77,10 +77,6 @@
   margin-top: 60px;
 }
 
-.page-footer__address-wrap {
-  margin-top: 20px;
-}
-
 .page-footer__nav-wrap {
   margin-top: 15px;
 }
@@ -95,6 +91,8 @@
 }
 
 .page-footer__address, .page-footer__phone {
+  margin-top: 30px;
+
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   color: $white;

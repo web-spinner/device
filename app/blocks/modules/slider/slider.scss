@@ -16,7 +16,7 @@
 
   &::after {
     position: absolute;
-    top: 34px;
+    top: 20px;
     right: 457px;
 
     content: '';
@@ -80,7 +80,7 @@
 
 .slider .slider__title {
   margin: 0;
-  margin-top: 75px;
+  margin-top: 70px;
   padding: 0;
   padding-left: 20px;
 
@@ -105,7 +105,7 @@
 
 .slider .slider__desc {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0;
   padding-left: 20px;
 
@@ -121,6 +121,7 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 40px;
+  margin-left: 20px;
   padding-left: 20px;
 }
 
@@ -149,7 +150,7 @@
 }
 
 .slider td {
-  margin-top: 5px;
+  margin-top: 10px;
 
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;  
   font-weight: 300;
@@ -165,7 +166,7 @@
 
 .slider__dots {
   position: absolute;
-  top: 325px;
+  top: 310px;
   right: 85px;
   z-index: 2;
   

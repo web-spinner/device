@@ -5,8 +5,10 @@
 
 .search__label {
   position: absolute;
-  top: 17px;
-  left: 4px;
+  top: 50%;
+  left: 0;
+  margin-top: -12px;
+  margin-left: -3px;
 }
 
 .search__button {
