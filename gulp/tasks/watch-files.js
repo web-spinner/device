@@ -17,10 +17,9 @@ const browserSync     = require('./browser-sync');
 const watchFiles = () => {
   watch(paths.watch.html, html);
   watch(paths.watch.css, css);
-  watch(paths.watch.scripts, series(scripts, browserSync.reload));
+  watch(paths.watch.scripts, scripts).on("change", browserSync.reload);
   watch(paths.watch.img, series(webp, images, browserSync.reload));
   watch(paths.watch.sprite, series(sprite, browserSync.reload));
-  watch(paths.watch.favicons, series(favicons, browserSync.reload));
   watch(paths.watch.fonts, series(fonts, includeFonts, browserSync.reload));
 }
 

@@ -21,14 +21,15 @@ const libs = {
 }
 
 const preload = [
-  { href: 'fonts/GilroyExtraBold.woff', as: 'font' },
-  { href: 'fonts/GilroyExtraBold.woff2', as: 'font' },
-  { href: 'fonts/gilroylight.woff', as: 'font' },
-  { href: 'fonts/gilroylight.woff2', as: 'font' },
-  { href: 'fonts/OpenSans-Regular.woff', as: 'font' },
-  { href: 'fonts/OpenSans-Regular.woff2', as: 'font' },
-  { href: 'fonts/OpenSans-Light.woff', as: 'font' },
-  { href: 'fonts/OpenSans-Light.woff2', as: 'font' },
+  { rel: 'stylesheet preload', href: 'css/main.min.css', as: 'style', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/GilroyExtraBold.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/GilroyExtraBold.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/gilroylight.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/gilroylight.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Regular.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Light.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Light.woff2', as: 'font', type: 'font/woff2', crossorigin: '' }
 ]
 
 const fonts = [

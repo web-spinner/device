@@ -14,7 +14,7 @@ const paths = {
     css:      `${project_dir}/css`,
     scripts:  `${project_dir}/js`,
     img:      `${project_dir}/img`,
-    favicons: `${project_dir}/favicons`,    
+    favicons: `${source_dir}/favicons/build`,    
     sprite:   `${project_dir}/img`,
     fonts:    `${project_dir}/fonts`,
   },
@@ -37,9 +37,16 @@ const paths = {
       `${source_dir}/favicons/*.{gif,svg,png}`,
       `!${source_dir}/favicons/src/*`,
     ],
+    fav_include: `${source_dir}/views/layouts/include/favicons.html`,
     sprite: `${source_dir}/img/sprite/*.svg`,
     fonts: `${source_dir}/fonts/**/*.{ttf,otf,eot,woff,woff2,svg}`,
     file_fonts: `${source_dir}/styles/${preprocessor}/base/_fonts.${preprocessor}`,
+  },
+  copy: {
+    favicons: {
+      from: `${source_dir}/favicons/build/*.{png,xml,ico,json,webapp}`,
+      to: `${project_dir}/favicons`,
+    }
   },
   watch: {
     html: [
