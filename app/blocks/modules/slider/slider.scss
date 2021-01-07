@@ -16,8 +16,8 @@
 
   &::after {
     position: absolute;
-    top: 20px;
-    right: 457px;
+    top: 30px;
+    right: 460px;
 
     content: '';
     display: block;
@@ -105,7 +105,7 @@
 
 .slider .slider__desc {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 0;
   padding-left: 20px;
 
@@ -150,7 +150,7 @@
 }
 
 .slider td {
-  margin-top: 10px;
+  margin-top: 15px;
 
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;  
   font-weight: 300;

@@ -36,12 +36,13 @@
 }
 
 .services__tabs {
-  width: 278px;
+  width: 285px;
   margin: 0;
+  margin-top: 5px;
   padding: 0;
   padding-left: 2px;
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
   border-right: 7px solid $black;
 
   list-style: none;
@@ -123,7 +124,7 @@
 
 .services__text {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 30px;
 
   letter-spacing: 0.25px;
 }

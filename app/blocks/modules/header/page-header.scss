@@ -1,7 +1,9 @@
 .page-header {
   width: 1445px;
   margin: 0 auto;
+  padding: 0;
   padding-top: 40px;
+  border: none;
 }
 
 .page-header .page-header__wrap {
@@ -21,7 +23,7 @@
 }
 
 .page-header--main .page-header__wrap {
-  padding-bottom: 165px;
+  padding-bottom: 161px;
 }
 
 .page-header__logo-wrap {
