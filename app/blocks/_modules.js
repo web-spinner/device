@@ -1,1 +1,1 @@
-@@include('./modules/example.js')
+@@include('./modules/form/range/f-range.js')

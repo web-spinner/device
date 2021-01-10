@@ -9,6 +9,7 @@ const base = {
 const libs = {
   css: [
     'node_modules/normalize.css/normalize.css',
+    'node_modules/nouislider/distribute/nouislider.min.css',
     //'node_modules/bootstrap/dist/css/bootstrap.css',
     //'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
     //'node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -16,6 +17,7 @@ const libs = {
   scripts: [
     'node_modules/picturefill/dist/picturefill.js',
     'node_modules/svgxuse/svgxuse.js',
+    'node_modules/nouislider/distribute/nouislider.min.js',
     //`node_modules/jquery/dist/jquery.js`, // JQuery npm i jquery --save-dev
   ],
 }

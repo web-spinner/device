@@ -1,0 +1,65 @@
+.f-range .noUi-target {
+  height: 2px;
+  border: none;
+  background-color: $dark-silver;
+}
+
+.f-range .noUi-connects {
+  height: 100%;
+}
+
+.f-range .noUi-connect {
+  background-color: $green;
+}
+
+.f-range .noUi-handle {
+  top: 0;
+
+  width: 20px;
+  height: 20px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background-color: $white;
+
+  cursor: pointer;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    top: 50%;
+    left: 50%;
+
+    width: 4px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 50%;
+
+    background-color: $gray;
+  }
+
+  &:focus, &:hover {
+    outline: none;
+  }
+}
+
+.f-range .noUi-active {
+    width: 22px;
+    height: 22px;
+    margin-top: -10px;
+}
+
+.f-range .noUi-origin .noUi-tooltip {
+  bottom: -30px;
+
+  border: none;
+  background-color: transparent;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.2;
+}
+

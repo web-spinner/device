@@ -40,6 +40,7 @@
     "gulp-webp": "^4.0.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
+    "nouislider": "^14.6.3",
     "picturefill": "^3.0.3",
     "posthtml-sugar-srcset": "^1.0.1",
     "svgxuse": "^1.2.6"
