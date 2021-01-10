@@ -5,7 +5,6 @@ const createSlider = slider => {
     const sliderMax = parseInt( slider.getAttribute('data-max') )
     const tooltipFirst = parseInt( slider.getAttribute('data-tooltip-first') )
     const tooltipLast = parseInt( slider.getAttribute('data-tooltip-last') )
-
     noUiSlider.create(slider, {
       start: [tooltipFirst, tooltipLast],
       range: {
@@ -27,17 +26,30 @@ const createSlider = slider => {
   }
 }
 
-const formatSlider = slider => {
+const formatSlider = (slider, values, handle) => {
   if(slider){
     const tooltips = document.querySelectorAll('.noUi-tooltip')
+    tooltips[handle].innerHTML = (handle == 0) ? 'от ' + values[handle] : 'до ' + values[handle]
+  }
+}
 
-    slider.noUiSlider.on('update', function (values, handle) {
-      tooltips[handle].innerHTML = (handle == 0) ? 'от ' + values[handle] : 'до ' + values[handle]
+const setValues = slider => {
+  if(slider){
+    const input = document.querySelector('.f-range__input')
+    input.value = slider.noUiSlider.get()
+  }
+}
+
+const eventSlider = (event, slider) => {
+  if(slider){
+    slider.noUiSlider.on(event, function (values, handle) {
+      formatSlider(slider, values, handle)
+      setValues(slider)
     })
   }
 }
 
 createSlider(slider)
-formatSlider(slider)
+eventSlider('update', slider)
 
 
