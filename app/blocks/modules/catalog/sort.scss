@@ -1,15 +1,44 @@
 .sort__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.7px;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .sort__list {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+
   list-style: none;
 }
 
+.sort__item {
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--up {
+    margin-left: auto;
+  }
+
+  &--down {
+    margin-left: 20px;
+  }
+}
+
 .sort__link {
+  display: flex;
+  align-items: center;
+
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;

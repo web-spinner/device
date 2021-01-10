@@ -1,3 +1,14 @@
+.products__sort {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-left: 73px;
+  padding-right: 140px;
+
+  background-color: $light-smoke;
+}
+
 .products__list {
   list-style: none;
 }
