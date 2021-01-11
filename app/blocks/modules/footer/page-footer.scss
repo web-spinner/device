@@ -4,6 +4,10 @@
   margin-top: 80px;
   padding-bottom: 70px;
   background-color: $dark;
+
+  &--catalog {
+    margin-top: 0;
+  }
 }
 
 .page-footer__wrap {
