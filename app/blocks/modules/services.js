@@ -7,7 +7,7 @@ const removeClass = (elem, className) => {
   }
 }
 
-if(tabs){
+if(tabs && services){
   tabs.forEach(tab => {
     tab.addEventListener('click', (event) => {
       event.preventDefault()
