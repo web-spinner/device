@@ -1,29 +1,28 @@
-const tabs = document.querySelectorAll('.services__button')
-const services = document.querySelectorAll('.services__item')
+(function(){
+  'use strict'
+  window.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.services__button')
+    const services = document.querySelectorAll('.services__item')
 
-const removeClass = (elem, className) => {
-  if(elem.classList.contains(className)) {
-    elem.classList.remove(className)
-  }
-}
+    const removeClassAll = (elements, className) => {
+      elements.forEach(element => {
+        element.classList.remove(className)
+      })
+    }
 
-if(tabs && services){
-  tabs.forEach(tab => {
-    tab.addEventListener('click', (event) => {
-      event.preventDefault()
-
+    if(tabs && services){
       tabs.forEach(tab => {
-        removeClass(tab, 'button--services-active')
+        tab.addEventListener('click', (event) => {
+          event.preventDefault()
+          
+          removeClassAll(tabs, 'button--services-active')
+          removeClassAll(services, 'services__item--show')
+
+          tab.classList.add('button--services-active')
+          let service = document.querySelector(tab.getAttribute('data-tab'))
+          service.classList.add('services__item--show')
+        })
       })
-
-      tab.classList.add('button--services-active')
-
-      services.forEach(service => {
-        removeClass(service, 'services__item--show')
-      })
-
-      let service = document.querySelector(tab.getAttribute('data-tab'))
-      service.classList.add('services__item--show')
-    })
+    }
   })
-}
+}());
