@@ -16,8 +16,17 @@
   }
 }
 
+.map-popup__wrap {
+  height: 559px;
+}
+
 .map-popup__button-close {
   position: absolute;
-  top: 22px;
+  top: 50px;
   right: 22px;
+}
+
+.map-popup .map-popup__hint {
+  font-weight: 800;
+  color: #d95548;
 }

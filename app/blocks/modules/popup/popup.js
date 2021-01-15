@@ -4,7 +4,7 @@
 
     const writeUsButton = document.querySelector('#write-us-btn')
     const mapButton = document.querySelector('#map-popup-btn')
-    const map = document.querySelector('#map')
+    const map = document.querySelector('.map-popup')
     const writeUs = document.querySelector('#write-us')
     const mapCloseButton = document.querySelector('#map-close-btn')
     const writeUsCloseButton = document.querySelector('#write-us-close-btn')
