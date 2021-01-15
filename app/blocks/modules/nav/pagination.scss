@@ -9,7 +9,25 @@
   list-style: none;
 }
 
+.pagination__item {
+  margin-right: 25px;
+
+  &:last-child, &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  &--back {
+    margin-right: auto;
+  }
+
+  &--forward {
+    margin-left: auto;
+  }
+}
+
 .pagination__item .pagination__link {
+  padding: 0;
+
   background-color: transparent;
   border: none;
 
@@ -48,15 +66,5 @@
   &:active {
     background-color: $silver;
     color: rgba($black, 0.3);
-  }
-}
-
-.pagination__item {
-  &--back {
-    margin-right: auto;
-  }
-
-  &--forward {
-    margin-left: auto;
   }
 }
