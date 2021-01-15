@@ -94,7 +94,7 @@
 
     width: 136px;
     height: 164px;
-    background-image: url('/img/delivery.svg');
+    background-image: url('../img/delivery.svg');
   }
 
   &--warranty::before {
@@ -103,7 +103,7 @@
 
     width: 171px;
     height: 194px;
-    background-image: url('/img/warranty.svg');
+    background-image: url('../img/warranty.svg');
   }
 
   &--credit::before {
@@ -112,7 +112,7 @@
 
     width: 156px;
     height: 186px;
-    background-image: url('/img/credit.svg');
+    background-image: url('../img/credit.svg');
   }
 }
 

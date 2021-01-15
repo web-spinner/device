@@ -17,13 +17,13 @@
     width: 25px;
     height: 25px;
     margin-top: -13px;
-    background-image: url('/img/radio-off.svg');
+    background-image: url('../img/radio-off.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
   } 
 
   &:checked + label::before, &:checked:not(:disabled) + label:active {
-    background-image: url('/img/radio-on.svg');
+    background-image: url('../img/radio-on.svg');
   }
 
   &:focus:not(:disabled) + label::before, &:not(:disabled) + label:hover::before {

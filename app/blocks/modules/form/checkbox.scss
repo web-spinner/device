@@ -17,14 +17,14 @@
     width: 23px;
     height: 23px;
     margin-top: -12px;
-    background-image: url('/img/checkbox-off.svg');
+    background-image: url('../img/checkbox-off.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
   }
 
   &:checked + label::before, &:active:not(:disabled) + label::before {
       width: 27px;
-      background-image: url('/img/checkbox-on.svg');
+      background-image: url('../img/checkbox-on.svg');
       opacity: 1;
   }
 
