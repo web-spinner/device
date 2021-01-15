@@ -515,7 +515,7 @@ a:active {
   width: 23px;
   height: 23px;
   margin-top: -12px;
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -523,7 +523,7 @@ a:active {
 .checkbox:checked + label::before,
 .checkbox:active:not(:disabled) + label::before {
   width: 27px;
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   opacity: 1;
 }
 
@@ -551,14 +551,14 @@ a:active {
   width: 25px;
   height: 25px;
   margin-top: -13px;
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .radio:checked + label::before,
 .radio:checked:not(:disabled) + label:active {
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 }
 
 .radio:focus:not(:disabled) + label::before,
@@ -1569,7 +1569,7 @@ a:active {
   right: -140px;
   width: 136px;
   height: 164px;
-  background-image: url("/img/delivery.svg");
+  background-image: url("../img/delivery.svg");
 }
 
 .services__item--warranty::before {
@@ -1577,7 +1577,7 @@ a:active {
   right: -165px;
   width: 171px;
   height: 194px;
-  background-image: url("/img/warranty.svg");
+  background-image: url("../img/warranty.svg");
 }
 
 .services__item--credit::before {
@@ -1585,7 +1585,7 @@ a:active {
   right: -140px;
   width: 156px;
   height: 186px;
-  background-image: url("/img/credit.svg");
+  background-image: url("../img/credit.svg");
 }
 
 .services__subtitle {
@@ -2552,20 +2552,20 @@ a:active {
   list-style: none;
 }
 
-.pagination__item {
+.pagination .pagination__item {
   margin-right: 25px;
 }
 
-.pagination__item:last-child,
-.pagination__item:nth-child(4) {
+.pagination .pagination__item:last-child,
+.pagination .pagination__item:nth-child(4) {
   margin-right: 0;
 }
 
-.pagination__item--back {
+.pagination .pagination__item--back {
   margin-right: auto;
 }
 
-.pagination__item--forward {
+.pagination .pagination__item--forward {
   margin-left: auto;
 }
 
