@@ -2552,7 +2552,25 @@ a:active {
   list-style: none;
 }
 
+.pagination__item {
+  margin-right: 25px;
+}
+
+.pagination__item:last-child,
+.pagination__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.pagination__item--back {
+  margin-right: auto;
+}
+
+.pagination__item--forward {
+  margin-left: auto;
+}
+
 .pagination__item .pagination__link {
+  padding: 0;
   background-color: transparent;
   border: none;
   font-size: 16px;
@@ -2599,14 +2617,6 @@ a:active {
 .pagination__item--forward .pagination__link:active {
   background-color: #d8d8d8;
   color: rgba(0, 0, 0, 0.3);
-}
-
-.pagination__item--back {
-  margin-right: auto;
-}
-
-.pagination__item--forward {
-  margin-left: auto;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
