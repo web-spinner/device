@@ -9,6 +9,7 @@ const base = {
 const libs = {
   css: [
     'node_modules/normalize.css/normalize.css',
+    'node_modules/nouislider/distribute/nouislider.min.css',
     //'node_modules/bootstrap/dist/css/bootstrap.css',
     //'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
     //'node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -16,26 +17,28 @@ const libs = {
   scripts: [
     'node_modules/picturefill/dist/picturefill.js',
     'node_modules/svgxuse/svgxuse.js',
+    'node_modules/nouislider/distribute/nouislider.min.js',
     //`node_modules/jquery/dist/jquery.js`, // JQuery npm i jquery --save-dev
   ],
 }
 
 const preload = [
-  { href: 'fonts/Roboto-Regular.woff', as: 'font' },
-  { href: 'fonts/Roboto-Regular.woff2', as: 'font' },
-  { href: 'fonts/Roboto-Bold.woff', as: 'font' },
-  { href: 'fonts/Roboto-Bold.woff2', as: 'font' },
-  { href: 'fonts/Roboto-Italic.woff', as: 'font' },
-  { href: 'fonts/Roboto-Italic.woff2', as: 'font' },
-  { href: 'fonts/Roboto-BoldItalic.woff', as: 'font' },
-  { href: 'fonts/Roboto-BoldItalic.woff2', as: 'font' },
+  { rel: 'stylesheet preload', href: 'css/main.min.css', as: 'style', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/GilroyExtraBold.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/GilroyExtraBold.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/gilroylight.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/gilroylight.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Regular.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Light.woff', as: 'font', type: 'font/woff', crossorigin: '' },
+  { rel: 'preload', href: 'fonts/OpenSans-Light.woff2', as: 'font', type: 'font/woff2', crossorigin: '' }
 ]
 
 const fonts = [
-  {name: 'Roboto', file: 'Roboto-Regular', style: 'normal', weight: '400'},
-  {name: 'Roboto', file: 'Roboto-Bold', style: 'normal', weight: '700'},
-  {name: 'Roboto', file: 'Roboto-Italic', style: 'italic', weight: '400'},
-  {name: 'Roboto', file: 'Roboto-BoldItalic', style: 'italic', weight: '700'},
+  {name: 'Gilroy', file: 'gilroylight', style: 'normal', weight: 300},
+  {name: 'Gilroy', file: 'GilroyExtraBold', style: 'normal', weight: 800},
+  {name: 'Open Sans', file: 'OpenSans-Light', style: 'normal', weight: 300},
+  {name: 'Open Sans', file: 'OpenSans-Regular', style: 'normal', weight: 400},
 ]
 
 const picture = {
@@ -50,7 +53,7 @@ const picture = {
     },
     {
       width: 320,
-      suffix: '-mobile'
+      suffix: '-mobile',
     },
   ],
   retina: {

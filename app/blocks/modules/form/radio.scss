@@ -1,0 +1,36 @@
+.radio {
+  & + label {
+    position: relative;
+
+    display: block;
+    padding-left: 41px;
+  }
+
+  & + label::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: -13px;
+    background-image: url('/img/radio-off.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  } 
+
+  &:checked + label::before, &:checked:not(:disabled) + label:active {
+    background-image: url('/img/radio-on.svg');
+  }
+
+  &:focus:not(:disabled) + label::before, &:not(:disabled) + label:hover::before {
+    opacity: 0.6;
+  }
+
+  &:disabled + label {
+    opacity: 0.25;
+  }
+}

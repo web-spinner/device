@@ -2,7 +2,7 @@
 
 const config      = require('../_config');
 const project_dir = config.base.project_dir,
-      source_dir  = config.base.source_dir; 
+      source_dir  = config.base.source_dir;
 
 const options = {
   browserSync: {
@@ -38,17 +38,30 @@ const options = {
     inlineSvg: true
   },
   srcset: config.pic,
-  fonter: {
-    formats:['ttf'],
-  },
   favicons: {
+    appName: "Divice",
+    appShortName: "Device",
     manifestRelativePaths: true,
     path: 'favicons/',
-    html: `../../${source_dir}/views/layouts/include/favicons.html`,
-    "display": "fullscreen",
-    "orientation": "any",
+    html: `../../views/layouts/include/favicons.html`,
+    display: "browser",
+    orientation: "natural",
     pipeHTML: true,
     replace: true,
+    icons: {
+
+      android: true,          
+      appleIcon: true,                  
+      appleStartup: false,       
+      coast: true,      
+      favicons: true,      
+      firefox: true,      
+      windows: true,       
+      yandex: true   
+    },
+  },
+  babel: {
+    presets: ['@babel/env']
   },
   ghpages: {
     src: [

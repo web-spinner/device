@@ -1,0 +1,75 @@
+.filter {
+  background-color: $light-smoke;
+}
+
+.filter .filter__header {
+  padding-top: 5px;
+  padding-bottom: 9px;
+  padding-left: 200px;
+  background-color: $dark-silver;
+}
+
+.filter .filter__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.filter__form {
+  padding-left: 200px;
+  padding-right: 68px;
+}
+
+.filter__box {
+  border-top: 2px solid $black;
+
+  &--price {
+    margin-top: 70px;
+  }
+
+  &--colors {
+    margin-top: 65px;
+  }
+
+  &--bluetooth {
+    margin-top: 38px;
+  }
+}
+
+.filter .filter__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  font-weight: 800;
+}
+
+.filter .filter__range {
+  margin-top: 35px;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--colors {
+    margin-top: 25px;
+  }
+
+  &--bluetooth {
+    margin-top: 20px;
+  }
+}
+
+.filter__list--colors .filter__item {
+  margin-top: 8px;
+}
+
+.filter__list--bluetooth .filter__item {
+  margin-top: 15px;
+}
+
+.filter__button {
+  margin-top: 30px;
+}

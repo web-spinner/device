@@ -1,0 +1,54 @@
+.page-main {
+  display: grid;
+  grid-template-columns: auto repeat(2, 580px) auto;
+  grid-template-rows: repeat(5, auto);
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.page-main__slider, .page-main__popular, .page-main__logotypes {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.page-main__slider {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: -106px;
+}
+
+.page-main__popular {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 100px;
+}
+
+.page-main__services {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 80px;
+}
+
+.page-main__logotypes {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 90px;
+}
+
+.page-main__about-us {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: 95px;
+}
+
+.page-main__contacts {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: 95px;
+}

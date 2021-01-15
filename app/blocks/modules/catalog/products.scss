@@ -1,0 +1,33 @@
+.products__sort {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-left: 73px;
+  padding-right: 140px;
+
+  background-color: $light-smoke;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 35px;
+
+  list-style: none;
+}
+
+.products__item {
+  margin-top: 50px;
+
+  &:nth-child(2n) {
+    margin-left: 35px;
+  }
+}
+
+.products__footer {
+  margin-top: 35px;
+  margin-left: 75px;
+  padding-bottom: 55px;
+}

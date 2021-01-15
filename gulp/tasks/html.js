@@ -9,13 +9,11 @@ const sourcemaps    = require('gulp-sourcemaps');
 const extender      = require('gulp-html-extend');
 const fileinclude   = require('gulp-file-include');
 const posthtml      = require('gulp-posthtml');
-const picture       = require('./picture');
 const htmlValidator = require('gulp-w3c-html-validator');
 const htmlprettify  = require('gulp-html-prettify');
 const htmlbeautify  = require('gulp-html-beautify');
 const rename        = require('gulp-rename');
 const browserSync   = require('./browser-sync');
-const fixfav        = require('./fix-favicon-validate');
 
 const html = () => {
   return src( paths.src.html)
@@ -23,8 +21,6 @@ const html = () => {
     .pipe( sourcemaps.init())
     .pipe( extender())
     .pipe( fileinclude())
-    .pipe( picture(config.picture.toggle) )
-    .pipe( fixfav() )
     .pipe( htmlValidator())
     .pipe( htmlValidator.reporter())
     .pipe( htmlprettify())

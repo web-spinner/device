@@ -9,6 +9,7 @@ const fileinclude = require('gulp-file-include');
 const rename      = require('gulp-rename');
 const uglify      = require('gulp-uglify');
 const browserSync = require('./browser-sync');
+const babel       = require('gulp-babel');
 
 const scripts = () => {
   return src( paths.src.scripts)
@@ -16,12 +17,12 @@ const scripts = () => {
     .pipe( sourcemaps.init())
     .pipe( fileinclude() )
     .pipe( dest( paths.build.scripts))
+    .pipe( babel(options.babel))
     .pipe( uglify() )
     .pipe( rename({suffix: '.min'}))
     .pipe( sourcemaps.write('./'))
     .pipe( dest( paths.build.scripts ))
-    .pipe( plumber.stop())
-    .pipe( browserSync.stream());
+    .pipe( plumber.stop());
 }
 
 module.exports = scripts;

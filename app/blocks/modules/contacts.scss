@@ -1,0 +1,35 @@
+.contacts {
+  padding-left: 20px;
+}
+
+.contacts__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  &:before {
+    content: '';
+
+    display: block;
+    width: 80px;
+    height: 7px;
+    margin-bottom: 45px;
+
+    background-color: $black;
+  }
+}
+
+.contacts .contacts__text {
+  margin-top: 45px;
+
+  letter-spacing: 0.1px;
+}
+
+.contacts__map {
+  margin-top: 40px;
+}
+
+.contacts__button {
+  margin-top: 75px;
+}

@@ -1,0 +1,18 @@
+.label {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  color: $black;
+  text-align: left;
+
+  cursor: pointer;
+
+  &--write-us {
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+}

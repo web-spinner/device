@@ -1,1 +1,52 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="range"].visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px; 
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 800;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
+}
+
+.page-main, .page-catalog {
+  & h2,
+  & h3 {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+  } 
+
+  & p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}

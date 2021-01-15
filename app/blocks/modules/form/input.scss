@@ -1,0 +1,85 @@
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  background-color: rgba(#e5e5e5, 0.5);
+
+  &, &::placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba($dark, 0.4);
+  }
+
+  &:hover, &:focus, &:hover::placeholder, &:focus::placeholder {
+    color: rgba($dark, 1);
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+
+    background-color: rgba($light-silver, 0.8);
+  }
+
+  &:focus {
+    padding: 12px;
+
+    background-color: rgba($white, 0.5);
+    outline: none;
+    border: 3px solid $yellow;
+  }
+
+  &:invalid {
+    color: rgba($dark, 0.4);
+
+    border: none;
+    outline: none;
+    background-color: rgba($light-pink, 0.5);
+  }
+
+  &--search {
+    width: 357px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 40px;
+    padding-right: 95px;
+    border: none;
+    background-color: transparent;
+
+    font-size: 15px; 
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    &:hover::placeholder {
+      opacity: 0.6;
+    }
+
+    &:focus::placeholder {
+      opacity: 1;
+    }
+
+    &:focus, &:hover, &:active {
+      background-color: transparent;
+    }
+
+    &:focus, &:active {
+      padding-top: 10px;
+      padding-bottom: 9px;
+      padding-left: 40px;
+      padding-right: 95px;
+
+      border: none;
+      border-bottom: 2px solid $black;
+      outline: none;
+    }
+  }
+}

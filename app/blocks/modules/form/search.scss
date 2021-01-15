@@ -1,0 +1,24 @@
+.search {
+  width: 441px;
+  position: relative;
+}
+
+.search__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -12px;
+  margin-left: -3px;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: none;
+}
+
+.search__input:focus + .search__button {
+  display: block;
+}
